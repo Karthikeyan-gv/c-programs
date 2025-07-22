@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int n,i,num,max=0;
+    printf("Enter the number of elements : ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        printf("Enter the elements : ");
+        scanf("%d",&num);
+//(num<max) ---> for smallest among n numbers
+        if(num>max){
+            max=num;
+        }
+    }
+    printf("Greatest element is : %d",max);
+    return 0;
+}
